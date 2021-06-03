@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package RemidiRPL;
+
+/**
+ *
+ * @author User
+ */
+public class TokoSepatu {
+
+    protected String nama;   
+    protected String  jenisSep, merkSep, kategori;
+    protected int  tanggalBeli, Harga,jumlah, ukuranSep;
+
+   
+    
+    
+    public TokoSepatu (String kategori,String jenisSep,String merkSep){
+        this.kategori = kategori;
+        this.jenisSep = jenisSep;
+        this.merkSep = merkSep;
+    }
+    
+    public void info(){
+        System.out.println("Kategori Sepatu    : " + this.kategori);
+        System.out.println("Jenis Sepatu       : " + this.jenisSep);
+        System.out.println("Merk Sepatu        : " + this.merkSep);
+        }
+    
+    int Harga(){
+        return Harga;
+    }
+    
+    }
+
+    
