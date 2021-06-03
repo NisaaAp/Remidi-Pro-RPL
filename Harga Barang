@@ -1,0 +1,63 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package RemidiRPL;
+
+
+/**
+ *
+ * @author User
+ */
+public class HargaBarang extends TokoSepatu{
+    int jumlah;
+    private int harga;
+    public HargaBarang(String kategori, String jenisSep, String merkSep, int jumlah, int harga) {
+        super(kategori, jenisSep, merkSep);
+        this.jumlah = jumlah;
+        this.harga = harga;   
+    }
+     int jumlah(){
+    System.out.print("Jumlah barang yang dibeli : " + jumlah);
+        return jumlah;
+    }
+   
+    int hargaBarang;
+    int jumlahBarang = 3;
+    int total;
+    int harga1;
+    int harga2;
+    int harga3;
+    int diskon;
+
+    
+         
+//hitungTotal
+    int Harga(){
+        System.out.println("");
+        System.out.println("");
+        System.out.println("--- PEMBAYARAN ---");
+        int harga = harga1 + harga2 + harga3;
+        System.out.println("Harga Barang yang Dibeli = "+harga);
+        switch (jumlahBarang) {
+            case 2:
+                diskon = 50000;
+                total = (harga - diskon);
+                System.out.println("Total : " + total);
+                break;
+            case 3:
+                {
+                    diskon = 100000;
+                    total = (harga - diskon);
+                    System.out.println("Total : " + total);
+                    break;
+                }
+            default:
+                total = harga*jumlahBarang;
+                System.out.println("Total : " + total);
+                break;
+        }
+        return Harga;
+}
+}
