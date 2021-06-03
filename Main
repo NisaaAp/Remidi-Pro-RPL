@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package RemidiRPL;
+
+/**
+ *
+ * @author User
+ */
+public class main {
+     public static void main(String[] nisa) {
+         String nama;
+         
+         
+        System.out.println("~TOKO SEPATU JAYA BARU~");
+        System.out.println(" ");
+        System.out.println("Nama Kasir : Nisa Amelia Putri");
+        System.out.println("Tanggal Pembelian : 31/06/2021");
+        System.out.println("...............................");
+        System.out.println("Nama barang yang dibeli:");
+        System.out.println(" ");
+       
+       
+         SepatuSantai santai;
+         santai = new SepatuSantai( "Laki-laki", "Sepatu Santai", "FILA", 
+                 "Black", 36,  200000);
+         santai.info();
+         
+         
+         SepatuOlga olga = new SepatuOlga("Laki-laki", "Sepatu Olahraga", "ADIDAS", "White", 40, 500000);
+         olga.info();
+        
+         SepatuLari lari = new SepatuLari("Laki-laki", "Sepatu Lari", "PUMA", "Blue", 38, 600000);
+         lari.info();
+         
+        
+        HargaBarang jumlahSepatu;
+        jumlahSepatu = new HargaBarang("String","String","String",1,1);
+        jumlahSepatu.jumlah = 3;
+        
+        HargaBarang hargaSepatu = new HargaBarang("String","String","String",1,1);
+        hargaSepatu.harga1 = 200000;
+        hargaSepatu.harga2 = 500000;
+        hargaSepatu.harga3 = 600000;
+        
+        
+        
+        System.out.println("----------------------------------");
+        jumlahSepatu.jumlah();
+        hargaSepatu.Harga(); 
+         
+         
+     }
+}
