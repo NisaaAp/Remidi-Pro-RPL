@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package RemidiRPL;
+
+/**
+ *
+ * @author User
+ */
+public class SepatuSantai extends TokoSepatu{
+    private final String warna;
+    private final int ukuran,hargaBarang;
+            
+    
+    public SepatuSantai (String kategori,String jenisSep,String merkSep, String warna,int ukuran, int hargaBarang){
+        super(kategori, jenisSep, merkSep);
+        this.warna = warna;
+        this.ukuran = ukuran;
+        this.hargaBarang = hargaBarang;
+    }
+    
+            
+    
+    @Override
+     public void info(){
+        System.out.println("-----Sepatu Santai-----");
+        super.info();
+        System.out.println("Warna Sepatu       : " + this.warna);
+        System.out.println("Ukuran Sepatu      : " + this.ukuran);
+        System.out.println("Harga Sepatu       : " + this.hargaBarang);
+        }
+        }
+
+
